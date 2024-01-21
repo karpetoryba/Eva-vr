@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+:root {
+  /*--------------------------*/
+  /*----------COLOR-----------*/
+  /*--------------------------*/
+  --primary-main: #7562d9;
+  --neutral-100: #ffffff;
+  --neutral-200: #ffffff;
+  --neutral-300: #ffffff;
+  --neutral-500: #ffffff;
+  --neutral-700: #ffffff;
+  --neutral-background: #070523;
+
+  /*--------------------------*/
+  /*----------SPACE-----------*/
+  /*--------------------------*/
+  --space-none: 0px;
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 28px;
+  --space-4xl: 32px;
+  --space-5xl: 36px;
+  --space-6xl: 40px;
+  --space-7xl: 44px;
+  --space-8xl: 48px;
+  --space-9xl: 56px;
+  --space-10xl: 64px;
+  --space-11xl: 72px;
+  --space-12xl: 80px;
+  --space-full: 100px;
+  --space-section: 120px;
+  --space-full: 999px;
+  --space-sectionSmallMaxWidth: 1200px;
+  --space-sectionLargeMaxWidth: 1400px;
+  --space-sectionPadding: 112px;
+  --space-blockSize: 450px;
+  /*--------------------------*/
+  /*----------FONTS-----------*/
+  /*--------------------------*/
+  --h1-font-size: 28px;
+  --h2-font-size: 20px;
+  --h2-line-height: 20px;
+  --p-font-size: 28px;
+  --item-font-size: 12px;
+}
+
+* {
+  margin: 0px;
+}
+/*------------------------------------------------*/
+/*-----------DES CLASS AVEC DES MEME VALEURS-----*/
+/*----------------------------------------------*/
+.title {
+  color: var(--neutral-100);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+.sybtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.button-text {
+  color: var(--neutral-100);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.title-center {
+  color: var(--neutral-100);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+span {
+  color: var(--primary-main);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+/*--------------------------*/
+/*-----------HAVIGATION-----*/
+/*--------------------------*/
+.logo {
+  width: 65px;
+  height: 24.5px;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-6xl);
+}
+.nav a {
+  color: var(--neutral-100);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.connection {
+  display: flex;
+  padding: var(--space-md) var(--space-3xl);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space-4xl);
+  border: 1px solid var(--neutral-100);
+  background-color: transparent;
+}
+.reserve {
+  display: flex;
+  padding: var(--space-md) var(--space-3xl);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space-4xl);
+  background: var(--primary-main);
+  border: none;
+}
+.action {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+/*--------------------------*/
+/*-----------HEADER---------*/
+/*--------------------------*/
+header {
+  display: flex;
+  height: 700px;
+  min-height: 700px;
+  padding: var(--space-md) var(--space-3xl);
+  flex-direction: column;
+  align-items: center;
+  background: url(ASSETS/header-background.jpg), lightgray 50% / cover no-repeat;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-7xl);
+  width: 100%;
+  max-width: 980px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*--------------------------*/
+/*-----TITLE-CONTAINER------*/
+/*--------------------------*/
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  gap: 200px;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-6xl);
+}
+.title-image {
+  width: 380px;
+  height: 330.5px;
+}
+
+/*--------------------------*/
+/*-------------MAIN---------*/
+/*--------------------------*/
+
+main {
+  display: flex;
+  padding: var(--space-8xl) var(--space-3xl) var(--space-section)
+    var(--space-3xl);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--neutral-background);
+}
+.container {
+  display: flex;
+  max-width: 980px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-section);
+}
+/*--------------------------*/
+/*-------------AFTER-H------*/
+/*--------------------------*/
+.after-h {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10xl);
+}
+.after-h-image {
+  width: 378px;
+  height: 457px;
+}
+.after-h-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4xl);
+  flex: 1 0 0;
+}
+/*--------------------------*/
+/*-----------GAME-MODES-----*/
+/*--------------------------*/
+
+.game-modes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6xl);
+}
+.game-modes-selection {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+/*--------------------------*/
+/*-----------DES CARDS------*/
+/*--------------------------*/
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card {
+  width: 300px;
+  height: 392px;
+  cursor: pointer;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  transition: transform 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+/*--------------------------*/
+/*-----------FOOTER---------*/
+/*--------------------------*/
+.button-footer {
+  display: flex;
+  padding: var(--space-md) var(--space-3xl);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space-4xl);
+  background: var(--primary-main);
+  border: none;
+  bottom: -1269px;
+}
+.img-footer {
+  display: flex;
+  height: 250px;
+  min-height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md, 12px);
+  align-self: stretch;
+  border-radius: var(--space-full);
+  background: url(ASSETS/join-battle.jpg), lightgray 50% / cover no-repeat;
+}
+
+.subtitle-center {
+  color: var(--neutral-100);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .header-content,
+  .title-container,
+  .container,
+  .after-h,
+  .game-modes-selection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title,
+  .sybtitle,
+  .title-center,
+  .subtitle-center,
+  .nav a,
+  .button-text {
+    font-size: smaller;
+  }
+
+  .menu,
+  .action,
+  .after-h-title,
+  .img-footer {
+    padding: var(--space-sm);
+  }
+
+  .logo,
+  .title-image,
+  .after-h-image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+  }
+  .action {
+    margin: 10px;
+  }
+  .title-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .after-h-image {
+    transform-origin: center top;
+    transform: scale(0.5);
+  }
+  .title-content {
+    align-items: center;
+  }
+  .title-image {
+    transform-origin: center top;
+    transform: scale(0.5);
+  }
+}
